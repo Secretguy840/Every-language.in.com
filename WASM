@@ -1,0 +1,9 @@
+(module
+  (func $main (export "main")
+    i32.const 0
+    i32.const 13
+    i32.store
+    (call $print (i32.const 0) (i32.const 13))
+  (memory (export "memory") 1)
+  (data (i32.const 0) "Hello, World!\00")
+)
