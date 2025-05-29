@@ -1,6 +1,6 @@
 # 🧠 Programming Languages & Their Types
 
-Welcome to the ultimate guide on **Programming Languages** and their **Types**. This `README.md` aims to give a high-level overview of the major programming languages, their categories, and use cases.do you want a code of every language??? VISIT https://chat.deepseek.com/a/chat/s/4fc39ae5-b295-4230-a552-451cad2be4fb
+Welcome to the ultimate guide on **Programming Languages** and their **Types**. This `README.md` aims to give a high-level overview of the major programming languages, their categories, and use cases.do you want a code of every language??? VISIT https://chat.deepseek.com/a/chat/s/4fc39ae5-b295-4230-a552-451cad2be4fb OR VISIT https://chat.deepseek.com/a/chat/s/bec53809-29f8-46d5-b220-2725ea3199f3 FOR BETTER EXPERIENCE.
 
 ---
 
