@@ -1,0 +1,25 @@
+#import <Foundation/Foundation.h>
+
+@interface Observed : NSObject
+@property (nonatomic) int value;
+@end
+
+@implementation Observed
+@end
+
+@interface Observer : NSObject
+@end
+
+@implementation Observer
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    NSLog(@"Value changed to %@", change[NSKeyValueChangeNewKey]);
+}
+@end
+
+int main() {
+    Observed *o = [Observed new];
+    Observer *observer = [Observer new];
+    [o addObserver:observer forKeyPath:@"value" options:NSKeyValueObservingOptionNew context:nil];
+    o.value = 42;
+    return 0;
+}
