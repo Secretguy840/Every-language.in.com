@@ -1,0 +1,10 @@
+import macros
+
+macro debug(args: varargs[untyped]): untyped =
+    result = newStmtList()
+    for arg in args:
+        result.add quote do:
+            echo `arg`, " = ", `arg`
+
+let x = 42
+debug(x)  # x = 42
