@@ -1,0 +1,15 @@
+local Person = {}
+Person.__index = Person
+
+function Person.new(name)
+    local self = setmetatable({}, Person)
+    self.name = name
+    return self
+end
+
+function Person:greet()
+    print("Hello, " .. self.name)
+end
+
+local p = Person.new("Alice")
+p:greet()  -- Hello, Alice
