@@ -1,0 +1,7 @@
+df <- data.frame(
+    name = c("Alice", "Bob"),
+    age = c(25, 30)
+)
+
+df$age_next_year <- df$age + 1
+print(df)
