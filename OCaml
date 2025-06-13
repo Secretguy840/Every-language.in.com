@@ -1,0 +1,12 @@
+module type X = sig
+    val x : int
+end
+
+module Increment (M : X) = struct
+    let y = M.x + 1
+end
+
+module M = struct let x = 41 end
+module N = Increment(M)
+
+let () = print_int N.y  (* 42 *)
