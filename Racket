@@ -1,0 +1,11 @@
+#lang racket
+
+(define-syntax match-example
+  (syntax-rules ()
+    [(_ val) 
+     (match val
+       [(list a b) (+ a b)]
+       [(? number? n) (* n 2)])]))
+
+(println (match-example '(1 2)))  ; 3
+(println (match-example 5))       ; 10
